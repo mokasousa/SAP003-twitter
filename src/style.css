@@ -33,15 +33,17 @@ body {
   /*position: absolute;*/
 }
 
-.text{
+/*.text{
   margin-bottom: 20%;
-  /*position: relative;*/
-}
+  /*position: relative;
+}*/
 
-.text textarea {
+#input-tweet{
   resize:none;
   width: 250px;
   min-height: 100px;
+  line-height: 24px;
+  overflow-y: hidden;
 }
 
 .tweet{
