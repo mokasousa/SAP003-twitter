@@ -1,28 +1,32 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="pt-br" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Meow Tweet</title>
+    <title>Travel Tweet</title>
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="title-tweet">
-      <h1>Meow Tweet</h1>
-    </div>
-    <div class="body-tweet">
-      <div class="box user">
-        <h3>Hello Dev</h3>
-        <p>I'm a web developer</p>
-      </div>
-      <div class="box text">
+    <header class="title-tweet">
+      <h1>Travel Tweet</h1>
+    </header>
+    <main class="body-tweet">
+      <section class="box user">
+        <h2>Mônica Sousa</h2>
+        <p>Hello, I'm a Web Developer Jr.<br>Welcome to my Twitter Wesite!</p>
+        <p><a href="https://github.com/mokasousa/SAP003-twitter">CHECK THE CODE</a></p>
+      </section>
+      <section class="box input">
         <form id="new-tweet">
-          <textarea class="tweet" id="input-tweet" name="tweet-text" autocomplete="off" autofocus placeholder="Insert your tweet here" type="text"></textarea>
-          <input class="tweet" id="button-tweet" type="submit" name="tweet" value="Tweet">
-      </div>
-      <div class="new-tweets">
+          <textarea class="tweet" id="input-tweet" name="tweet-text" autocomplete="off" autofocus placeholder="Insert your tweet here" type="text" maxlength="140"></textarea>
+          <input class="tweet count" id="button-tweet" type="submit" name="tweet" value="Tweet">
+          <h1 class="count" id="count-char">140</h1>
+      </section>
+      <section class="new-tweets">
         <ul id="tweets"></ul>
-      </div>
-    </div>
+      </section>
+    </main>
     <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="tweet.js"></script>
   </body>
 </html>
