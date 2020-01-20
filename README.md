@@ -1,40 +1,22 @@
-#Desafio extra: twitter
+# Travel Twitter
 
-Neste desafio, vamos replicar o feed de notícias do Twitter. Para tanto, seguiremos um fluxo de versões que a guiarão para se concentrar mais eficientemente :)
+## O projeto
 
-Você pode adaptar o design como quiser, mas não demore para definir as cores ou fontes. Se quiser, pode replicar o design da página oficial :). Aqui está um exemplo:
+O objetivo do projeto era criar uma réplica do feed de notícias do Twitter seguindo o [exemplo](https://media.giphy.com/media/3ov9jP4RIGQCUQOScg/giphy.gif). 
+Os tweets com data e hora são guardados no localStorage. 
 
-![exemplo twitter](https://media.giphy.com/media/3ov9jP4RIGQCUQOScg/giphy.gif)
+## Passos
 
-## Versão 0.0.1
-
-- Crie um formulário que permita inserir um texto e um botão para "twittar".
-- Adicione um evento de click ao botão ou de submit no formulário.
-- No evento, obter o texto.
-- Adicione o texto ao HTML.
-- Salvar os tweets no `localStorage`.
-
-## Versão 0.0.2
-
+- Criar um formulário que permita inserir um texto e um botão para "twittar".
+- Adicionar um evento de click ao botão ou de submit no formulário.
 - Não inserir texto vazio (desativar o botão "twittar").
-- Conte o número de caracteres de forma regressiva.
+- Contar o número de caracteres de forma regressiva.
+- Se passar dos 140 caracteres, desativar o botão.
+- Ao pressionar enter (/n) aumentar a área de texto de acordo com o tamanho do texto.q
+- Salvar os tweets no `localStorage`.
+- Adicionar a hora em que o tweet foi publicado.
 
-## Versão 0.0.3
+## Considerações finais
 
-- Se você passar os 140 caracteres, desative o botão.
-- Se você passar os 120 caracteres, mostre o contador com outra cor.
-- Se você passar os 130 caracteres, mostre o contador com outra cor.
-- Se você passar os 140 caracteres, mostre o contador em negativo.
+Criado e desenvolvido por Mônica Sousa. 
 
-## Versão 0.0.4
-
-- Ao pressionar enter (/n) aumente a área de texto de acordo com o tamanho do texto.
-
-## Versão 0.0.5 (Hacker edition)
-
-- Se o número de caracteres digitados (sem dar um "enter") exceder o tamanho da área de texto por padrão, mais uma linha deverá ser adicionada para que a rolagem não apareça. (Se aplicável)
-
-## Versão 0.0.6 (Hacker edition)
-
-- Adicione a hora em que o tweet foi publicado no formato de 24 horas hh:mm.
-- Nota: Para formatar a data e a hora, você pode criar sua própria função com métodos nativos do JS ou usar uma biblioteca como `moment.js`.
